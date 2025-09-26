@@ -371,6 +371,25 @@
             font-weight: 500;
             letter-spacing: 0.05em;
         }
+
+        /* Beliebt Label */
+        .package-popular {
+            border: 2px solid var(--color-hover);
+            position: relative;
+        }
+        
+        .package-popular::before {
+            content: "BELIEBT";
+            position: absolute;
+            top: -1px;
+            right: -1px;
+            background: var(--color-hover);
+            color: var(--color-white);
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
         
         .package-price {
             font-size: 2.5rem;
@@ -779,7 +798,7 @@
                     </div>
                 </div>
 
-                <div class="card package-card fade-in">
+                <div class="card package-card package-popular fade-in"> 
                     <h3>Beratung & Sparring</h3>
                     <div class="package-price">CHF 990</div>
                     <div class="package-period">4 Wochen intensiv</div>
