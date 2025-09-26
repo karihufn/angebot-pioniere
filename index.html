@@ -31,6 +31,17 @@
             font-size: 16px;
             background: var(--color-white);
         }
+
+        /* Logo-Click leads to start of page */
+        .logo-link {
+            display: block;
+            cursor: pointer;
+        }
+
+        .logo-link:hover img {
+            opacity: 0.8;
+            transition: opacity 0.2s ease;
+        }
         
         /* Headings */
         h1 {
@@ -574,7 +585,9 @@
     <header class="header">
         <div class="header-container">
             <div class="header-logo">
-                <img src="images/gplus.jpg" alt="Logo - Gestaltung+" loading="lazy" onload="this.classList.add('loaded')">
+                <a href="#top" class="logo-link">
+                    <img src="images/gplus.jpg" alt="Logo - Gestaltung+" loading="lazy" onload="this.classList.add('loaded')">
+                </a>
             </div>
             <nav class="header-nav">
                 <a href="https://wa.me/message/6TC2RUVNO2K4I1" target="_blank">👋 Kurz Hallo sagen @karinhufnagl</a>
